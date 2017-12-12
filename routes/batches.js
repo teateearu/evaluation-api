@@ -8,7 +8,7 @@ const authenticate = passport.authorize('jwt', { session: false })
 router.get('/batches', (req, res, next) => {
   Batch.find()
     // Newest students first
-    .sort({ createdAt: -1 })
+    .sort({ startDate: -1 })
     // Send the data in JSON format
     .then((batches) => res.json(batches))
     // Throw a 500 error if something goes wrong
