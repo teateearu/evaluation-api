@@ -5,4 +5,6 @@ const User = require('./user')
 module.exports = {
   Student,
   User,
+  Evaluation,
+  Batch,
 }
