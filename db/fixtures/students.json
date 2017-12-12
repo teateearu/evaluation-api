@@ -1,7 +1,7 @@
 [
   {
     "name": "Bulbasaur",
-    "photo": "http://https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png.sseu.re/mixed-seafood-paella.jpeg",
+    "photo": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png",
     "evaluations": [
       { "date": "11-12-17", "color": "yellow" },
       { "date": "12-12-17", "color": "green" }
