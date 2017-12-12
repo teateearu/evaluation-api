@@ -2,6 +2,7 @@
 const request = require('superagent')
 const user = require('./fixtures/user.json')
 const students = require('./fixtures/students.json')
+const batches = require('./fixtures/batches.json')
 
 const createUrl = (path) => {
   return `${process.env.HOST || `http://localhost:${process.env.PORT || 3030}`}${path}`
@@ -22,13 +23,28 @@ const createStudents = (token) => {
   })
 }
 
+const createBatches = (token) => {
+  return batches.map((batch) => {
+    return request
+      .post(createUrl('/batches'))
+      .set('Authorization', `Bearer ${token}`)
+      .send(batch)
+      .then((res) => {
+        console.log('Batch seeded...', res.body.title)
+      })
+      .catch((err) => {
+        console.error('Error seeding batch!', err)
+      })
+  })
+}
+
 const authenticate = (email, password) => {
   request
     .post(createUrl('/sessions'))
     .send({ email, password })
     .then((res) => {
       console.log('Authenticated!')
-      return createStudents(res.body.token)
+      return createBatches(res.body.token)
     })
     .catch((err) => {
       console.error('Failed to authenticate!', err.message)
