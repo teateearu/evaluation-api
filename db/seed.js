@@ -1,23 +1,23 @@
 // db/seed.js
 const request = require('superagent')
 const user = require('./fixtures/user.json')
-const recipes = require('./fixtures/recipes.json')
+const students = require('./fixtures/students.json')
 
 const createUrl = (path) => {
   return `${process.env.HOST || `http://localhost:${process.env.PORT || 3030}`}${path}`
 }
 
-const createRecipes = (token) => {
-  return recipes.map((recipe) => {
+const createStudents = (token) => {
+  return students.map((student) => {
     return request
-      .post(createUrl('/recipes'))
+      .post(createUrl('/students'))
       .set('Authorization', `Bearer ${token}`)
-      .send(recipe)
+      .send(student)
       .then((res) => {
-        console.log('Recipe seeded...', res.body.title)
+        console.log('Student seeded...', res.body.title)
       })
       .catch((err) => {
-        console.error('Error seeding recipe!', err)
+        console.error('Error seeding student!', err)
       })
   })
 }
@@ -28,7 +28,7 @@ const authenticate = (email, password) => {
     .send({ email, password })
     .then((res) => {
       console.log('Authenticated!')
-      return createRecipes(res.body.token)
+      return createStudents(res.body.token)
     })
     .catch((err) => {
       console.error('Failed to authenticate!', err.message)

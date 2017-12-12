@@ -4,7 +4,7 @@ const cors = require('cors')
 const bodyParser = require('body-parser')
 const passport = require('./config/auth')
 
-const { recipes, users, sessions } = require('./routes')
+const { students, users, sessions } = require('./routes')
 
 const PORT = process.env.PORT || 3030
 
@@ -15,7 +15,7 @@ let app = express()
   .use(passport.initialize())
 
   // Our routes
-  .use(recipes)
+  .use(students)
   .use(users)
   .use(sessions)
 

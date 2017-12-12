@@ -1,12 +1,12 @@
 {
-  "name": "recipes-api",
+  "name": "students-api",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "start": "node .",
     "dev": "nodemon --inspect .",
-    "seed": "node seed.js"
+    "seed": "node db/seed.js"
   },
   "dependencies": {
     "body-parser": "^1.18.2",

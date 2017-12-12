@@ -1,4 +1,4 @@
-// models/recipe.js
+// models/student.js
 const mongoose = require('../config/database')
 const { Schema } = mongoose
 
@@ -14,7 +14,7 @@ const cookingStepSchema = new Schema({
   description: { type: String, required: true }
 })
 
-const recipeSchema = new Schema({
+const studentSchema = new Schema({
   title: { type: String, required: true },
   summary: { type: String, required: true },
   photo: { type: String, default: 'http://via.placeholder.com/500x180?text=No%20Image' },
@@ -30,4 +30,4 @@ const recipeSchema = new Schema({
   updatedAt: { type: Date, default: Date.now }
 })
 
-module.exports = mongoose.model('recipes', recipeSchema)
+module.exports = mongoose.model('students', studentSchema)

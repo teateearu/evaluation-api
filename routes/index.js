@@ -1,9 +1,9 @@
-const recipes = require('./recipes')
+const students = require('./students')
 const users = require('./users')
 const sessions = require('./sessions')
 
 module.exports = {
-  recipes,
+  students,
   users,
   sessions,
 }

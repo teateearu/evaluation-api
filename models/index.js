@@ -1,8 +1,8 @@
 // models/index.js
-const Recipe = require('./recipe')
+const Student = require('./student')
 const User = require('./user')
 
 module.exports = {
-  Recipe,
+  Student,
   User,
 }
