@@ -1,0 +1,94 @@
+[
+  {
+    "date": "2017-12-12",
+    "color": "green",
+    "student_id": "5a3029f41293bc5db7e30b74"
+  },
+  {
+    "date": "2017-12-12",
+    "color": "red",
+    "student_id": "5a3029f41293bc5db7e30b71"
+  },
+  {
+    "date": "2017-12-12",
+    "color": "yellow",
+    "student_id": "5a3029f41293bc5db7e30b6e"
+  },
+  {
+    "date": "2017-12-12",
+    "color": "green",
+    "student_id": "5a3029f41293bc5db7e30b6b"
+  },
+  {
+    "date": "2017-12-12",
+    "color": "green",
+    "student_id": "5a3029f41293bc5db7e30b68"
+  },
+  {
+    "date": "2017-12-12",
+    "color": "red",
+    "student_id": "5a3029f41293bc5db7e30b65"
+  },
+
+  {
+    "date": "2017-11-12",
+    "color": "red",
+    "student_id": "5a30f79de4091f8fd3373369"
+  },
+  {
+    "date": "2017-11-12",
+    "color": "red",
+    "student_id": "5a30f79de4091f8fd3373366"
+  },
+  {
+    "date": "2017-11-12",
+    "color": "green",
+    "student_id": "5a30f79de4091f8fd3373363"
+  },
+  {
+    "date": "2017-11-12",
+    "color": "yellow",
+    "student_id": "5a30f79de4091f8fd3373360"
+  },
+  {
+    "date": "2017-11-12",
+    "color": "green",
+    "student_id": "5a30f79de4091f8fd337335d"
+  },
+  {
+    "date": "2017-11-12",
+    "color": "yellow",
+    "student_id": "5a30f79de4091f8fd337335a"
+  },
+
+  {
+    "date": "2017-10-12",
+    "color": "red",
+    "student_id": "5a3029f41293bc5db7e30b87"
+  },
+  {
+    "date": "2017-10-12",
+    "color": "red",
+    "student_id": "5a3029f41293bc5db7e30b84"
+  },
+  {
+    "date": "2017-10-12",
+    "color": "yellow",
+    "student_id": "5a3029f41293bc5db7e30b81"
+  },
+  {
+    "date": "2017-10-12",
+    "color": "yellow",
+    "student_id": "5a3029f41293bc5db7e30b7e"
+  },
+  {
+    "date": "2017-10-12",
+    "color": "green",
+    "student_id": "5a3029f41293bc5db7e30b7b"
+  },
+  {
+    "date": "2017-10-12",
+    "color": "green",
+    "student_id": "5a3029f41293bc5db7e30b78"
+  },
+]
