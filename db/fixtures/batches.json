@@ -2,16 +2,16 @@
   {
     "batchNumber": "1",
     "startDate": "2017-10-01",
-    "endDate": "2017-11-01",
+    "endDate": "2017-11-01"
   },
   {
     "batchNumber": "2",
     "startDate": "2017-11-01",
-    "endDate": "2017-12-01",
+    "endDate": "2017-12-01"
   },
   {
     "batchNumber": "3",
     "startDate": "2017-12-01",
-    "endDate": "2017-01-01",
+    "endDate": "2017-01-01"
   }
 ]

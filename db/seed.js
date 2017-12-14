@@ -15,7 +15,7 @@ const createEvaluations = (token) => {
       .post(createUrl('/evaluations'))
       .set('Authorization', `Bearer ${token}`)
       .send(evaluation)
-      .then((red) => {
+      .then((res) => {
         console.log('Evaluations seeded', res.body.title)
       })
       .catch((err) => {
@@ -60,7 +60,9 @@ const authenticate = (email, password) => {
     .send({ email, password })
     .then((res) => {
       console.log('Authenticated!')
-      return createEvaluations(res.body.token)
+      return createEvaluations(res.body.token),
+      createStudents(res.body.token),
+      createBatches(res.body.token)
     })
     .catch((err) => {
       console.error('Failed to authenticate!', err.message)
