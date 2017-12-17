@@ -23,7 +23,7 @@ router.get('/batches', (req, res, next) => {
       })
       .catch((error) => next(error))
   })
-  .get('batches/:id/students', (req, res, next) => {
+  .get('/batches/:id/students', (req, res, next) => {
     const id = req.params.id
     Batch.findById(id)
       .then((batch) => {
